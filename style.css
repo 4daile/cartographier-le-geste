@@ -1,0 +1,83 @@
+@FONT-FACE {
+    font-family: "NECTO";
+    src: url("/NectoMono-Regular.otf") format("truetype");
+}
+
+
+html, body { 
+    margin: 0; 
+    background: #FFFAD3; 
+}
+
+header {
+    width: 100%;
+    margin: 0.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    font-family: "NECTO", sans-serif;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+
+    z-index: 1;
+}
+
+h3 {
+    font-family: "NECTO", sans-serif;
+    font-size: 1rem;
+}
+
+.compteur {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-left: 2rem;
+    user-select: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-right: 2rem;
+}
+
+button {
+    background-color: #FFFAD3; 
+    font-family: "NECTO", sans-serif;
+}
+
+button:hover {
+    cursor:pointer; 
+    background-color: #FFCCB8;
+}
+
+#clickCount, #heure, #view, #language {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0.3rem 0.5rem;
+}
+
+canvas { 
+    position: fixed; 
+    inset: 0; 
+    z-index: 0;
+
+    cursor: grab;
+}
+
+canvas:active {
+    cursor: grabbing;
+}
+    
